@@ -1,0 +1,10 @@
+node_modules/
+vendor/
+dist/
+*.min.js
+/home.mjs
+/study.mjs
+/search.mjs
+/question-actions.mjs
+package-lock.json
+THIRD-PARTY-NOTICES.txt

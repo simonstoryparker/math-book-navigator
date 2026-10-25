@@ -1,0 +1,2218 @@
+{
+  "course": "hl",
+  "title": "Applications and Interpretation HL",
+  "totalPages": 969,
+  "contentsPage": 7,
+  "answersPage": 857,
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Exponentials",
+      "items": [
+        {
+          "label": "Exercise 1A",
+          "questionPage": 16,
+          "answerPage": 857,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 1B",
+          "questionPage": 17,
+          "answerPage": 857,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 1C",
+          "questionPage": 20,
+          "answerPage": 857,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 1D",
+          "questionPage": 22,
+          "answerPage": 857,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Exercise 1E",
+          "questionPage": 24,
+          "answerPage": 858,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 1F",
+          "questionPage": 27,
+          "answerPage": 859,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 1G.1",
+          "questionPage": 30,
+          "answerPage": 859,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 1G.2",
+          "questionPage": 33,
+          "answerPage": 860,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 1H",
+          "questionPage": 37,
+          "answerPage": 860,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 1I",
+          "questionPage": 41,
+          "answerPage": 861,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 1A",
+          "questionPage": 41,
+          "answerPage": 861,
+          "questionOrdinal": 2,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Review Set 1B",
+          "questionPage": 43,
+          "answerPage": 862,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Logarithms",
+      "items": [
+        {
+          "label": "Exercise 2A",
+          "questionPage": 48,
+          "answerPage": 862,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 2B",
+          "questionPage": 51,
+          "answerPage": 863,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 2C",
+          "questionPage": 54,
+          "answerPage": 863,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 2D",
+          "questionPage": 58,
+          "answerPage": 863,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 2E",
+          "questionPage": 61,
+          "answerPage": 865,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 2A",
+          "questionPage": 65,
+          "answerPage": 865,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Review Set 2B",
+          "questionPage": 66,
+          "answerPage": 866,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Approximations and Error",
+      "items": [
+        {
+          "label": "Exercise 3A",
+          "questionPage": 70,
+          "answerPage": 866,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 3B",
+          "questionPage": 73,
+          "answerPage": 866,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Review Set 3A",
+          "questionPage": 75,
+          "answerPage": 866,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Review Set 3B",
+          "questionPage": 76,
+          "answerPage": 867,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Loans and Annuities",
+      "items": [
+        {
+          "label": "Exercise 4A",
+          "questionPage": 81,
+          "answerPage": 867,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 4B",
+          "questionPage": 86,
+          "answerPage": 867,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Review Set 4A",
+          "questionPage": 89,
+          "answerPage": 867,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Review Set 4B",
+          "questionPage": 90,
+          "answerPage": 867,
+          "questionOrdinal": 1,
+          "answerOrdinal": 5
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Modelling",
+      "items": [
+        {
+          "label": "Exercise 5A",
+          "questionPage": 94,
+          "answerPage": 867,
+          "questionOrdinal": 1,
+          "answerOrdinal": 6
+        },
+        {
+          "label": "Exercise 5B",
+          "questionPage": 100,
+          "answerPage": 868,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 5C.1",
+          "questionPage": 103,
+          "answerPage": 868,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 5C.2",
+          "questionPage": 107,
+          "answerPage": 869,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 5C.3",
+          "questionPage": 108,
+          "answerPage": 869,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 5D",
+          "questionPage": 110,
+          "answerPage": 869,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Review Set 5A",
+          "questionPage": 112,
+          "answerPage": 870,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 5B",
+          "questionPage": 115,
+          "answerPage": 870,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Direct and Inverse Variation",
+      "items": [
+        {
+          "label": "Exercise 6A",
+          "questionPage": 120,
+          "answerPage": 871,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 6B",
+          "questionPage": 123,
+          "answerPage": 871,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 6C",
+          "questionPage": 125,
+          "answerPage": 871,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 6D",
+          "questionPage": 127,
+          "answerPage": 872,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 6E",
+          "questionPage": 129,
+          "answerPage": 872,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 6F",
+          "questionPage": 131,
+          "answerPage": 872,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Review Set 6A",
+          "questionPage": 132,
+          "answerPage": 873,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 6B",
+          "questionPage": 134,
+          "answerPage": 873,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Bivariate Statistics",
+      "items": [
+        {
+          "label": "Exercise 7A",
+          "questionPage": 140,
+          "answerPage": 873,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 7B",
+          "questionPage": 145,
+          "answerPage": 874,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 7C",
+          "questionPage": 148,
+          "answerPage": 875,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 7D",
+          "questionPage": 152,
+          "answerPage": 875,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 7E",
+          "questionPage": 155,
+          "answerPage": 875,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 7F",
+          "questionPage": 163,
+          "answerPage": 876,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 7G",
+          "questionPage": 167,
+          "answerPage": 877,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 7A",
+          "questionPage": 170,
+          "answerPage": 877,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Review Set 7B",
+          "questionPage": 173,
+          "answerPage": 878,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Non-linear Modelling",
+      "items": [
+        {
+          "label": "Exercise 8A",
+          "questionPage": 179,
+          "answerPage": 879,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 8B",
+          "questionPage": 181,
+          "answerPage": 879,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 8C",
+          "questionPage": 184,
+          "answerPage": 880,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 8D",
+          "questionPage": 185,
+          "answerPage": 880,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 8E",
+          "questionPage": 189,
+          "answerPage": 881,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 8A",
+          "questionPage": 190,
+          "answerPage": 882,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 8B",
+          "questionPage": 192,
+          "answerPage": 883,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Vectors",
+      "items": [
+        {
+          "label": "Exercise 9A.1",
+          "questionPage": 196,
+          "answerPage": 884,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 9A.2",
+          "questionPage": 197,
+          "answerPage": 885,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 9B.1",
+          "questionPage": 199,
+          "answerPage": 885,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 9B.2",
+          "questionPage": 201,
+          "answerPage": 885,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 9B.3",
+          "questionPage": 202,
+          "answerPage": 885,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Exercise 9C",
+          "questionPage": 204,
+          "answerPage": 886,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 9D",
+          "questionPage": 206,
+          "answerPage": 886,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 9E",
+          "questionPage": 208,
+          "answerPage": 886,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 9F",
+          "questionPage": 211,
+          "answerPage": 887,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 9G",
+          "questionPage": 212,
+          "answerPage": 887,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 9H",
+          "questionPage": 214,
+          "answerPage": 887,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 9I",
+          "questionPage": 219,
+          "answerPage": 888,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 9J",
+          "questionPage": 222,
+          "answerPage": 888,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 9K",
+          "questionPage": 225,
+          "answerPage": 888,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 9L.1",
+          "questionPage": 231,
+          "answerPage": 889,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 9L.2",
+          "questionPage": 233,
+          "answerPage": 889,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 9L.3",
+          "questionPage": 234,
+          "answerPage": 889,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 9M",
+          "questionPage": 237,
+          "answerPage": 889,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Review Set 9A",
+          "questionPage": 238,
+          "answerPage": 889,
+          "questionOrdinal": 1,
+          "answerOrdinal": 5
+        },
+        {
+          "label": "Review Set 9B",
+          "questionPage": 240,
+          "answerPage": 890,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Vector Applications",
+      "items": [
+        {
+          "label": "Exercise 10A",
+          "questionPage": 245,
+          "answerPage": 890,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 10B",
+          "questionPage": 248,
+          "answerPage": 891,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 10C",
+          "questionPage": 250,
+          "answerPage": 891,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 10D",
+          "questionPage": 253,
+          "answerPage": 891,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 10E",
+          "questionPage": 256,
+          "answerPage": 892,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 10F.1",
+          "questionPage": 257,
+          "answerPage": 892,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 10F.2",
+          "questionPage": 260,
+          "answerPage": 892,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Review Set 10A",
+          "questionPage": 262,
+          "answerPage": 892,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Review Set 10B",
+          "questionPage": 264,
+          "answerPage": 892,
+          "questionOrdinal": 1,
+          "answerOrdinal": 5
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Complex Numbers",
+      "items": [
+        {
+          "label": "Exercise 11A",
+          "questionPage": 269,
+          "answerPage": 893,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 11B",
+          "questionPage": 270,
+          "answerPage": 893,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 11C",
+          "questionPage": 272,
+          "answerPage": 893,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 11D",
+          "questionPage": 274,
+          "answerPage": 893,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Exercise 11E",
+          "questionPage": 276,
+          "answerPage": 893,
+          "questionOrdinal": 1,
+          "answerOrdinal": 5
+        },
+        {
+          "label": "Exercise 11F",
+          "questionPage": 279,
+          "answerPage": 895,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 11G",
+          "questionPage": 281,
+          "answerPage": 895,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 11H.1",
+          "questionPage": 284,
+          "answerPage": 895,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 11H.2",
+          "questionPage": 287,
+          "answerPage": 895,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Exercise 11H.3",
+          "questionPage": 289,
+          "answerPage": 896,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 11I",
+          "questionPage": 292,
+          "answerPage": 896,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 11J",
+          "questionPage": 293,
+          "answerPage": 896,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Review Set 11A",
+          "questionPage": 294,
+          "answerPage": 896,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Review Set 11B",
+          "questionPage": 296,
+          "answerPage": 897,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Matrices",
+      "items": [
+        {
+          "label": "Exercise 12A",
+          "questionPage": 301,
+          "answerPage": 898,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 12B",
+          "questionPage": 302,
+          "answerPage": 898,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 12C",
+          "questionPage": 303,
+          "answerPage": 898,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 12D",
+          "questionPage": 305,
+          "answerPage": 898,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Exercise 12E",
+          "questionPage": 307,
+          "answerPage": 899,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 12F.1",
+          "questionPage": 308,
+          "answerPage": 899,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 12F.2",
+          "questionPage": 311,
+          "answerPage": 899,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 12F.3",
+          "questionPage": 314,
+          "answerPage": 899,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Exercise 12G.1",
+          "questionPage": 316,
+          "answerPage": 899,
+          "questionOrdinal": 1,
+          "answerOrdinal": 5
+        },
+        {
+          "label": "Exercise 12G.2",
+          "questionPage": 318,
+          "answerPage": 900,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 12H",
+          "questionPage": 320,
+          "answerPage": 900,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Review Set 12A",
+          "questionPage": 324,
+          "answerPage": 900,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Review Set 12B",
+          "questionPage": 326,
+          "answerPage": 901,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Eigenvalues and Eigenvectors",
+      "items": [
+        {
+          "label": "Exercise 13A.1",
+          "questionPage": 331,
+          "answerPage": 901,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 13A.2",
+          "questionPage": 332,
+          "answerPage": 901,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 13B",
+          "questionPage": 335,
+          "answerPage": 902,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 13C",
+          "questionPage": 338,
+          "answerPage": 902,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 13D.1",
+          "questionPage": 341,
+          "answerPage": 902,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 13D.2",
+          "questionPage": 347,
+          "answerPage": 903,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 13A",
+          "questionPage": 350,
+          "answerPage": 903,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Review Set 13B",
+          "questionPage": 352,
+          "answerPage": 904,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Affine Transformations",
+      "items": [
+        {
+          "label": "Exercise 14A",
+          "questionPage": 356,
+          "answerPage": 904,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 14B",
+          "questionPage": 359,
+          "answerPage": 904,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 14C",
+          "questionPage": 362,
+          "answerPage": 905,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 14D",
+          "questionPage": 363,
+          "answerPage": 905,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 14E",
+          "questionPage": 363,
+          "answerPage": 905,
+          "questionOrdinal": 2,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 14F",
+          "questionPage": 365,
+          "answerPage": 905,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Exercise 14G",
+          "questionPage": 369,
+          "answerPage": 905,
+          "questionOrdinal": 1,
+          "answerOrdinal": 5
+        },
+        {
+          "label": "Review Set 14A",
+          "questionPage": 373,
+          "answerPage": 906,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 14B",
+          "questionPage": 374,
+          "answerPage": 907,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "title": "Graph Theory",
+      "items": [
+        {
+          "label": "Exercise 15A",
+          "questionPage": 379,
+          "answerPage": 907,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 15B",
+          "questionPage": 382,
+          "answerPage": 908,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 15C",
+          "questionPage": 384,
+          "answerPage": 908,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 15D.1",
+          "questionPage": 387,
+          "answerPage": 908,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 15D.2",
+          "questionPage": 390,
+          "answerPage": 909,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 15E",
+          "questionPage": 394,
+          "answerPage": 911,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 15F",
+          "questionPage": 395,
+          "answerPage": 911,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 15G.1",
+          "questionPage": 398,
+          "answerPage": 912,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 15G.2",
+          "questionPage": 400,
+          "answerPage": 912,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 15H",
+          "questionPage": 403,
+          "answerPage": 912,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 15I",
+          "questionPage": 406,
+          "answerPage": 913,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 15J",
+          "questionPage": 409,
+          "answerPage": 913,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 15K.1",
+          "questionPage": 413,
+          "answerPage": 913,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 15K.2",
+          "questionPage": 416,
+          "answerPage": 914,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 15A",
+          "questionPage": 417,
+          "answerPage": 914,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Review Set 15B",
+          "questionPage": 420,
+          "answerPage": 915,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "title": "Voronoi Diagrams",
+      "items": [
+        {
+          "label": "Exercise 16A",
+          "questionPage": 427,
+          "answerPage": 916,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 16B",
+          "questionPage": 431,
+          "answerPage": 916,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 16C",
+          "questionPage": 437,
+          "answerPage": 918,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 16D",
+          "questionPage": 439,
+          "answerPage": 918,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 16E",
+          "questionPage": 441,
+          "answerPage": 919,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 16A",
+          "questionPage": 444,
+          "answerPage": 919,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Review Set 16B",
+          "questionPage": 446,
+          "answerPage": 920,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "title": "Introduction to Differential Calculus",
+      "items": [
+        {
+          "label": "Exercise 17A.1",
+          "questionPage": 450,
+          "answerPage": 921,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 17A.2",
+          "questionPage": 452,
+          "answerPage": 921,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 17B",
+          "questionPage": 455,
+          "answerPage": 921,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 17C.1",
+          "questionPage": 457,
+          "answerPage": 921,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Exercise 17C.2",
+          "questionPage": 460,
+          "answerPage": 921,
+          "questionOrdinal": 1,
+          "answerOrdinal": 5
+        },
+        {
+          "label": "Exercise 17D",
+          "questionPage": 461,
+          "answerPage": 922,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 17E",
+          "questionPage": 463,
+          "answerPage": 922,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 17F",
+          "questionPage": 466,
+          "answerPage": 922,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Review Set 17A",
+          "questionPage": 467,
+          "answerPage": 922,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Review Set 17B",
+          "questionPage": 468,
+          "answerPage": 923,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "title": "Rules of Differentiation",
+      "items": [
+        {
+          "label": "Exercise 18A",
+          "questionPage": 473,
+          "answerPage": 923,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 18B.1",
+          "questionPage": 476,
+          "answerPage": 923,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 18B.2",
+          "questionPage": 477,
+          "answerPage": 924,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 18C",
+          "questionPage": 480,
+          "answerPage": 902,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Exercise 18D",
+          "questionPage": 482,
+          "answerPage": 924,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 18E",
+          "questionPage": 485,
+          "answerPage": 924,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 18F",
+          "questionPage": 487,
+          "answerPage": 924,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Exercise 18G",
+          "questionPage": 490,
+          "answerPage": 925,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 18H",
+          "questionPage": 492,
+          "answerPage": 925,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Review Set 18A",
+          "questionPage": 493,
+          "answerPage": 926,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 18B",
+          "questionPage": 494,
+          "answerPage": 926,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "title": "Properties of Curves",
+      "items": [
+        {
+          "label": "Exercise 19A",
+          "questionPage": 498,
+          "answerPage": 926,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 19B",
+          "questionPage": 503,
+          "answerPage": 927,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 19C",
+          "questionPage": 507,
+          "answerPage": 927,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 19D",
+          "questionPage": 511,
+          "answerPage": 928,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 19E",
+          "questionPage": 515,
+          "answerPage": 929,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 19F",
+          "questionPage": 518,
+          "answerPage": 930,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 19A",
+          "questionPage": 520,
+          "answerPage": 931,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 19B",
+          "questionPage": 522,
+          "answerPage": 932,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "title": "Applications of Differentiation",
+      "items": [
+        {
+          "label": "Exercise 20A",
+          "questionPage": 526,
+          "answerPage": 933,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 20B",
+          "questionPage": 533,
+          "answerPage": 934,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 20C",
+          "questionPage": 539,
+          "answerPage": 934,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 20D",
+          "questionPage": 542,
+          "answerPage": 935,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 20A",
+          "questionPage": 544,
+          "answerPage": 935,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Review Set 20B",
+          "questionPage": 546,
+          "answerPage": 935,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "title": "Introduction to Integration",
+      "items": [
+        {
+          "label": "Exercise 21A.1",
+          "questionPage": 550,
+          "answerPage": 936,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 21A.2",
+          "questionPage": 553,
+          "answerPage": 936,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 21B",
+          "questionPage": 556,
+          "answerPage": 936,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 21C",
+          "questionPage": 559,
+          "answerPage": 937,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 21D",
+          "questionPage": 563,
+          "answerPage": 937,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Review Set 21A",
+          "questionPage": 564,
+          "answerPage": 937,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Review Set 21B",
+          "questionPage": 565,
+          "answerPage": 938,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "title": "Techniques for Integration",
+      "items": [
+        {
+          "label": "Exercise 22A",
+          "questionPage": 568,
+          "answerPage": 938,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 22B",
+          "questionPage": 572,
+          "answerPage": 939,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 22C",
+          "questionPage": 574,
+          "answerPage": 939,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 22D",
+          "questionPage": 576,
+          "answerPage": 939,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 22E",
+          "questionPage": 580,
+          "answerPage": 940,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 22A",
+          "questionPage": 581,
+          "answerPage": 940,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Review Set 22B",
+          "questionPage": 582,
+          "answerPage": 941,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "title": "Definite Integrals",
+      "items": [
+        {
+          "label": "Exercise 23A",
+          "questionPage": 587,
+          "answerPage": 941,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 23B",
+          "questionPage": 589,
+          "answerPage": 941,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 23C",
+          "questionPage": 590,
+          "answerPage": 941,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Exercise 23D",
+          "questionPage": 594,
+          "answerPage": 941,
+          "questionOrdinal": 1,
+          "answerOrdinal": 5
+        },
+        {
+          "label": "Exercise 23E",
+          "questionPage": 598,
+          "answerPage": 942,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 23F.1",
+          "questionPage": 600,
+          "answerPage": 942,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 23F.2",
+          "questionPage": 602,
+          "answerPage": 942,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 23G",
+          "questionPage": 604,
+          "answerPage": 942,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Review Set 23A",
+          "questionPage": 605,
+          "answerPage": 942,
+          "questionOrdinal": 1,
+          "answerOrdinal": 5
+        },
+        {
+          "label": "Review Set 23B",
+          "questionPage": 607,
+          "answerPage": 943,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "title": "Kinematics",
+      "items": [
+        {
+          "label": "Exercise 24A",
+          "questionPage": 613,
+          "answerPage": 943,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 24B.1",
+          "questionPage": 615,
+          "answerPage": 943,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 24B.2",
+          "questionPage": 618,
+          "answerPage": 944,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 24C",
+          "questionPage": 622,
+          "answerPage": 944,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 24D",
+          "questionPage": 626,
+          "answerPage": 945,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 24E",
+          "questionPage": 628,
+          "answerPage": 945,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 24F",
+          "questionPage": 631,
+          "answerPage": 946,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 24G",
+          "questionPage": 637,
+          "answerPage": 946,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Review Set 24A",
+          "questionPage": 639,
+          "answerPage": 946,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Review Set 24B",
+          "questionPage": 641,
+          "answerPage": 947,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "title": "Differential Equations",
+      "items": [
+        {
+          "label": "Exercise 25A",
+          "questionPage": 646,
+          "answerPage": 948,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 25B",
+          "questionPage": 648,
+          "answerPage": 948,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 25C",
+          "questionPage": 650,
+          "answerPage": 948,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 25D",
+          "questionPage": 654,
+          "answerPage": 948,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Exercise 25E",
+          "questionPage": 660,
+          "answerPage": 949,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 25F",
+          "questionPage": 664,
+          "answerPage": 950,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 25A",
+          "questionPage": 667,
+          "answerPage": 950,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Review Set 25B",
+          "questionPage": 669,
+          "answerPage": 950,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "title": "Coupled Differential Equations",
+      "items": [
+        {
+          "label": "Exercise 26A",
+          "questionPage": 674,
+          "answerPage": 950,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Exercise 26B",
+          "questionPage": 685,
+          "answerPage": 951,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 26C",
+          "questionPage": 688,
+          "answerPage": 951,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 26D",
+          "questionPage": 691,
+          "answerPage": 952,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 26A",
+          "questionPage": 694,
+          "answerPage": 953,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 26B",
+          "questionPage": 695,
+          "answerPage": 953,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "title": "Discrete Random Variables",
+      "items": [
+        {
+          "label": "Exercise 27A",
+          "questionPage": 700,
+          "answerPage": 954,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 27B",
+          "questionPage": 703,
+          "answerPage": 954,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 27C.1",
+          "questionPage": 705,
+          "answerPage": 955,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 27C.2",
+          "questionPage": 708,
+          "answerPage": 955,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 27D",
+          "questionPage": 711,
+          "answerPage": 955,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 27E",
+          "questionPage": 714,
+          "answerPage": 955,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Exercise 27F",
+          "questionPage": 718,
+          "answerPage": 955,
+          "questionOrdinal": 1,
+          "answerOrdinal": 5
+        },
+        {
+          "label": "Exercise 27G",
+          "questionPage": 720,
+          "answerPage": 956,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 27H",
+          "questionPage": 723,
+          "answerPage": 956,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 27I",
+          "questionPage": 726,
+          "answerPage": 956,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Review Set 27A",
+          "questionPage": 727,
+          "answerPage": 957,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 27B",
+          "questionPage": 729,
+          "answerPage": 957,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "title": "The Normal Distribution",
+      "items": [
+        {
+          "label": "Exercise 28A.1",
+          "questionPage": 735,
+          "answerPage": 957,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 28A.2",
+          "questionPage": 736,
+          "answerPage": 958,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 28B.1",
+          "questionPage": 739,
+          "answerPage": 958,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 28B.2",
+          "questionPage": 742,
+          "answerPage": 959,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 28C.1",
+          "questionPage": 746,
+          "answerPage": 959,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 28C.2",
+          "questionPage": 748,
+          "answerPage": 959,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 28D",
+          "questionPage": 750,
+          "answerPage": 959,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Review Set 28A",
+          "questionPage": 752,
+          "answerPage": 960,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 28B",
+          "questionPage": 754,
+          "answerPage": 960,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "title": "Estimation and Confidence Intervals",
+      "items": [
+        {
+          "label": "Exercise 29A",
+          "questionPage": 759,
+          "answerPage": 960,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 29B",
+          "questionPage": 760,
+          "answerPage": 960,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Exercise 29C",
+          "questionPage": 762,
+          "answerPage": 961,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 29D",
+          "questionPage": 765,
+          "answerPage": 961,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 29E.1",
+          "questionPage": 773,
+          "answerPage": 961,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 29E.2",
+          "questionPage": 775,
+          "answerPage": 961,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Exercise 29E.3",
+          "questionPage": 776,
+          "answerPage": 961,
+          "questionOrdinal": 1,
+          "answerOrdinal": 5
+        },
+        {
+          "label": "Exercise 29F",
+          "questionPage": 779,
+          "answerPage": 961,
+          "questionOrdinal": 1,
+          "answerOrdinal": 6
+        },
+        {
+          "label": "Review Set 29A",
+          "questionPage": 780,
+          "answerPage": 961,
+          "questionOrdinal": 1,
+          "answerOrdinal": 7
+        },
+        {
+          "label": "Review Set 29B",
+          "questionPage": 782,
+          "answerPage": 961,
+          "questionOrdinal": 1,
+          "answerOrdinal": 8
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "title": "Hypothesis Testing",
+      "items": [
+        {
+          "label": "Exercise 30A",
+          "questionPage": 787,
+          "answerPage": 962,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 30B",
+          "questionPage": 791,
+          "answerPage": 962,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 30C",
+          "questionPage": 796,
+          "answerPage": 962,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 30D",
+          "questionPage": 800,
+          "answerPage": 962,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Exercise 30E",
+          "questionPage": 803,
+          "answerPage": 963,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 30F",
+          "questionPage": 805,
+          "answerPage": 963,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 30G",
+          "questionPage": 808,
+          "answerPage": 963,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 30H",
+          "questionPage": 812,
+          "answerPage": 963,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Exercise 30I",
+          "questionPage": 816,
+          "answerPage": 964,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 30J.1",
+          "questionPage": 820,
+          "answerPage": 964,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 30J.2",
+          "questionPage": 824,
+          "answerPage": 964,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Review Set 30A",
+          "questionPage": 825,
+          "answerPage": 964,
+          "questionOrdinal": 1,
+          "answerOrdinal": 4
+        },
+        {
+          "label": "Review Set 30B",
+          "questionPage": 827,
+          "answerPage": 965,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "title": "Chi-squared Hypothesis Tests",
+      "items": [
+        {
+          "label": "Exercise 31A",
+          "questionPage": 835,
+          "answerPage": 965,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 31B",
+          "questionPage": 842,
+          "answerPage": 965,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        },
+        {
+          "label": "Exercise 31C",
+          "questionPage": 844,
+          "answerPage": 966,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Exercise 31D.1",
+          "questionPage": 848,
+          "answerPage": 966,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Exercise 31D.2",
+          "questionPage": 851,
+          "answerPage": 967,
+          "questionOrdinal": 1,
+          "answerOrdinal": 1
+        },
+        {
+          "label": "Review Set 31A",
+          "questionPage": 852,
+          "answerPage": 967,
+          "questionOrdinal": 1,
+          "answerOrdinal": 2
+        },
+        {
+          "label": "Review Set 31B",
+          "questionPage": 854,
+          "answerPage": 967,
+          "questionOrdinal": 1,
+          "answerOrdinal": 3
+        }
+      ]
+    }
+  ]
+}

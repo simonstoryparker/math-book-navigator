@@ -1,0 +1,26 @@
+.DS_Store
+.wrangler/
+tmp/
+*.zip
+Netlify Upload/
+Netlify Upload Updated/
+.env
+.env.*
+!.env.example
+node_modules/
+.taste-skill/
+test-results/
+
+# Local books, credentials, and development artifacts
+*.pdf
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+coverage/
+playwright-report/
+artifacts/
+screenshots/
+dist/
+.netlify/

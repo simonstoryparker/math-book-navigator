@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Questions and answers | Simon Math Book</title>
+    <script>
+      document.documentElement.dataset.palette = 'blue';
+      try {
+        const p = localStorage.getItem('mathNavigatorPalette');
+        if (['blue', 'green', 'purple', 'rose', 'amber', 'teal'].includes(p))
+          document.documentElement.dataset.palette = p;
+      } catch {}
+      try {
+        const t = localStorage.getItem('mathNavigatorTheme');
+        document.documentElement.dataset.theme = ['light', 'dark'].includes(t)
+          ? t
+          : matchMedia('(prefers-color-scheme: dark)').matches
+            ? 'dark'
+            : 'light';
+      } catch {
+        document.documentElement.dataset.theme = matchMedia(
+          '(prefers-color-scheme: dark)',
+        ).matches
+          ? 'dark'
+          : 'light';
+      }
+    </script>
+    <link rel="stylesheet" href="site-ui.css?v=motion-4" />
+  </head>
+  <body class="study-page">
+    <header class="toolbar">
+      <a class="back" href="index.html">← Simon Math Book</a>
+      <div class="title">
+        <h1 id="title">Questions and answers</h1>
+        <span id="questionCount"
+          >Read questions beside their printed answers</span
+        >
+      </div>
+      <nav class="pdf-links" aria-label="Open source PDF pages">
+        <a class="pdf-link" id="questionPdfLink" target="_blank" rel="noopener"
+          >Questions PDF</a
+        >
+        <a class="pdf-link" id="answerPdfLink" target="_blank" rel="noopener"
+          >Answers PDF</a
+        >
+      </nav>
+      <div class="appearance" data-appearance></div>
+    </header>
+    <main class="viewer-grid" id="sourceGrid">
+      <section class="viewer book" id="bookViewer">
+        <div class="pane-heading">
+          <span>Questions</span>
+          <div class="pane-tools">
+            <span class="page-status" id="bookStatus">Loading…</span>
+            <div class="zoom-controls" aria-label="Book zoom controls">
+              <button
+                type="button"
+                data-pane="book"
+                data-zoom="out"
+                aria-label="Zoom book out"
+              >
+                −
+              </button>
+              <span class="zoom-level" id="bookZoom">100%</span>
+              <button
+                type="button"
+                data-pane="book"
+                data-zoom="in"
+                aria-label="Zoom book in"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="scroll-pane"
+          id="bookPane"
+          tabindex="0"
+          aria-label="Book pages"
+        >
+          <div class="pages" id="bookPages"></div>
+        </div>
+      </section>
+      <div
+        class="split-divider"
+        role="separator"
+        tabindex="0"
+        aria-label="Resize question and answer panes"
+      ></div>
+      <section class="viewer answer" id="answerViewer">
+        <div class="pane-heading">
+          <span>Answers</span>
+          <div class="pane-tools">
+            <span class="page-status" id="answerStatus">Loading…</span>
+            <div class="zoom-controls" aria-label="Answer zoom controls">
+              <button
+                type="button"
+                data-pane="answer"
+                data-zoom="out"
+                aria-label="Zoom answers out"
+              >
+                −
+              </button>
+              <span class="zoom-level" id="answerZoom">100%</span>
+              <button
+                type="button"
+                data-pane="answer"
+                data-zoom="in"
+                aria-label="Zoom answers in"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="scroll-pane"
+          id="answerPane"
+          tabindex="0"
+          aria-label="Answer pages"
+        >
+          <div class="pages" id="answerPages"></div>
+        </div>
+      </section>
+    </main>
+    <main class="paired-view" id="pairedView">
+      <div class="study-controls">
+        <div
+          class="question-tools"
+          role="group"
+          aria-label="Question and AI tools"
+        >
+          <select
+            id="questionJump"
+            aria-label="Current question"
+            hidden
+          ></select
+          ><output id="currentQuestion" for="questionJump" aria-live="polite"
+            >Section</output
+          >
+          <span id="aiToolbar"></span>
+        </div>
+        <div class="view-tools" role="group" aria-label="Reading view">
+          <button id="fitQuestions" type="button">Fit to width</button>
+          <button id="toggleAnswers" type="button" aria-pressed="false">
+            Hide answers
+          </button>
+        </div>
+      </div>
+      <div class="continuous-grid" id="continuousGrid">
+        <section class="viewer book">
+          <div class="pane-heading">
+            <span>Questions</span>
+            <div class="zoom-controls">
+              <button
+                data-pair-pane="book"
+                data-zoom="out"
+                aria-label="Zoom questions out"
+              >
+                −</button
+              ><span class="zoom-level" id="pairedBookZoom">100%</span
+              ><button
+                data-pair-pane="book"
+                data-zoom="in"
+                aria-label="Zoom questions in"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div
+            class="pair-cell problem-cell"
+            id="continuousBook"
+            tabindex="0"
+            aria-label="Continuous questions"
+          >
+            <div class="crop-stack" id="sectionBook"></div>
+          </div>
+        </section>
+        <div
+          class="split-divider"
+          role="separator"
+          tabindex="0"
+          aria-label="Resize question and answer panes"
+        ></div>
+        <section class="viewer answer">
+          <div class="pane-heading">
+            <span>Answers</span>
+            <div class="zoom-controls">
+              <button
+                data-pair-pane="answer"
+                data-zoom="out"
+                aria-label="Zoom answers out"
+              >
+                −</button
+              ><span class="zoom-level" id="pairedAnswerZoom">100%</span
+              ><button
+                data-pair-pane="answer"
+                data-zoom="in"
+                aria-label="Zoom answers in"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div
+            class="pair-cell answer-cell"
+            id="continuousAnswer"
+            tabindex="0"
+            aria-label="Continuous answers"
+          >
+            <div class="crop-stack" id="sectionAnswer"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <dialog id="aiDialog" aria-labelledby="aiTitle">
+      <form method="dialog" class="dialog-heading">
+        <h2 id="aiTitle">Google AI</h2>
+        <button aria-label="Close AI preview">Close</button>
+      </form>
+      <p id="aiNote"></p>
+      <div class="ai-preview" id="aiPreview"></div>
+      <label for="aiPrompt">Prompt to send</label>
+      <textarea id="aiPrompt" rows="8" spellcheck="false"></textarea>
+      <div class="ai-actions">
+        <button id="copyImage" type="button">Copy image</button
+        ><button id="saveImage" type="button">Download image</button
+        ><button id="copyPrompt" type="button">Copy prompt</button
+        ><button id="askFromPreview" class="primary-action" type="button">
+          Ask Google AI
+        </button>
+      </div>
+      <p>
+        <a id="openGoogle" target="_blank" rel="noopener" hidden
+          >Open Google AI</a
+        >
+      </p>
+      <p id="aiStatus" role="status" aria-live="polite"></p>
+    </dialog>
+    <div class="error" id="error">
+      <div>
+        <strong>The book could not be opened.</strong>
+        <p id="errorMessage"></p>
+      </div>
+    </div>
+
+    <script type="module" src="study.mjs?v=mn-1"></script>
+  </body>
+</html>
