@@ -10,3 +10,5 @@ For IB Math HL and SL students to use for homework.
 - Copy a question image and open Google AI with its context. Paste or upload the image there yourself; no API key is required.
 
 https://simon-math-book.netlify.app
+
+<img width="985" height="851" alt="image" src="https://github.com/user-attachments/assets/ea82b5a8-f7e7-4dde-99a2-9d7fbcb680b4" />
