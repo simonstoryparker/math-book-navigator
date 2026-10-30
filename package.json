@@ -3,10 +3,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "python3 -m http.server 5818 --bind 127.0.0.1",
+    "dev": "npm run build:local && python3 -m http.server 5818 --bind 127.0.0.1 --directory dist",
     "build": "node scripts/build.mjs",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "build:local": "node scripts/build.mjs --local",
+    "test": "node --test"
   },
   "dependencies": {
     "@floating-ui/dom": "1.8.0",

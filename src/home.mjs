@@ -4,16 +4,17 @@ import {
   pdfSourceForCourse,
   pdfChunkForPage,
   pdfChunkUrl,
+  PDF_CHUNK_BASE,
   studyViewUrl,
-} from '../navigator-core.mjs?v=mn-1';
-import { createCatalogSearch } from '../search.mjs?v=mn-1';
+} from './navigator-core.mjs';
+import { createCatalogSearch } from './search.mjs';
 import {
   HOME_KEY,
   readStored,
   writeStored,
   recentSections,
-} from '../navigator-state.mjs?v=mn-1';
-import '../site-ui.mjs?v=mn-1';
+} from './navigator-state.mjs';
+import './site-ui.mjs';
 import { setupRecentMotion } from './recent-motion.mjs';
 
 let storage;
@@ -29,6 +30,7 @@ let catalog,
   searchCatalog,
   activeChapter,
   recentMotion,
+  courseMotion,
   renderId = 0;
 let home = readStored(storage, HOME_KEY, {});
 if (!home || typeof home !== 'object' || Array.isArray(home)) home = {};
@@ -41,7 +43,7 @@ function pdfHref(page) {
   if (!source.useChunks)
     return `${source.localPdf}#page=${page}&zoom=page-width`;
   const chunk = pdfChunkForPage(course, page, catalog.totalPages);
-  return `${pdfChunkUrl('https://simon-math-book-pdf.pages.dev/pdf', course, chunk.filename)}#page=${chunk.localPage}&zoom=page-width`;
+  return `${pdfChunkUrl(PDF_CHUNK_BASE, course, chunk.filename)}#page=${chunk.localPage}&zoom=page-width`;
 }
 function saveHome() {
   if (!course) return;
@@ -188,6 +190,10 @@ function renderChapters() {
   );
 }
 async function selectCourse(next, { restore = true } = {}) {
+  const focusSearch = $('courseSelection').contains(document.activeElement);
+  courseMotion?.();
+  courseMotion = null;
+  $('courseSelection').hidden = true;
   const ticket = ++renderId;
   course = next;
   rememberCourse(storage, course);
@@ -211,7 +217,7 @@ async function selectCourse(next, { restore = true } = {}) {
     if (!catalogs.has(course))
       catalogs.set(
         course,
-        fetch(`./${course}-catalog.json?v=mn-1`, { cache: 'force-cache' })
+        fetch(`./${course}-catalog.json`, { cache: 'force-cache' })
           .then((response) => {
             if (!response.ok) throw new Error('Index unavailable');
             return response.json();
@@ -243,6 +249,7 @@ async function selectCourse(next, { restore = true } = {}) {
     renderRecents();
     $('catalogStatus').hidden = true;
     $('catalogBrowser').hidden = false;
+    if (focusSearch) search.focus();
     if (restore)
       requestAnimationFrame(() => {
         window.scrollTo(0, Number(saved.scroll) || 0);
@@ -304,3 +311,4 @@ addEventListener('pageshow', (event) => {
   if (event.persisted && catalog) renderRecents();
 });
 if (course) selectCourse(course);
+else courseMotion = setupRecentMotion($('courseOptions'));

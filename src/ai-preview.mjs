@@ -1,5 +1,5 @@
-import { animateDialog } from './site-ui.mjs?v=mn-1';
-import { createAiLauncher, googleAiUrl } from './ai-launch.mjs?v=mn-1';
+import { animateDialog } from './site-ui.mjs';
+import { createAiLauncher, googleAiUrl } from './ai-launch.mjs';
 
 export function createAiControls() {
   const $ = (id) => document.getElementById(id);

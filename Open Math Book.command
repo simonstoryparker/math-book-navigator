@@ -3,12 +3,14 @@
 set -eu
 cd -- "$(dirname -- "$0")"
 
+npm run build:local
+
 port=5818
 while lsof -nP -iTCP:"$port" -sTCP:LISTEN >/dev/null 2>&1; do
   port=$((port + 1))
 done
 
-python3 -m http.server "$port" --bind 127.0.0.1 >/private/tmp/math-book-navigator.log 2>&1 &
+python3 -m http.server "$port" --bind 127.0.0.1 --directory dist >/private/tmp/math-book-navigator.log 2>&1 &
 server_pid=$!
 sleep 1
 

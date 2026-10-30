@@ -1,8 +1,10 @@
 export const COURSE_STORAGE_KEY = 'mathBookCourse';
 export const SL_PDF_CACHE_VERSION = 'sl-pdf-1';
+export const PDF_CHUNK_BASE = 'https://simon-math-book-pdf.pages.dev/pdf';
 // The desktop/local launcher reads nearby PDFs. The hosted build sets
 // this single flag to "cloudflare" so book traffic stays on chunk assets.
-export const PDF_ASSET_MODE = 'local';
+export const PDF_ASSET_MODE =
+  typeof __PDF_ASSET_MODE__ === 'undefined' ? 'local' : __PDF_ASSET_MODE__;
 
 // PDF text runs may split a printed heading into its word and section ID.
 // Join only adjacent runs on the same line, retaining the heading's geometry.

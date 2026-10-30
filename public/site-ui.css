@@ -402,6 +402,22 @@ small {
   grid-template-columns: 2fr 1fr 1fr;
   gap: 6px;
 }
+#courseOptions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+#courseOptions .recent-link {
+  border: 0;
+  text-align: left;
+  min-height: 140px;
+  transform-origin: left center;
+  scale: 1;
+}
+#courseOptions .recent-name {
+  font-size: 32px;
+  font-weight: 650;
+}
 .recent-link {
   position: relative;
   display: flex;

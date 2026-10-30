@@ -5,7 +5,7 @@ import {
   requestedQuestion,
   savedPaneAnchor,
   restorePaneAnchor,
-} from './navigator-state.mjs?v=mn-1';
+} from './navigator-state.mjs';
 
 export function setupStudySession({
   course,

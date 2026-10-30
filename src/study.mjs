@@ -4,18 +4,19 @@ import {
   confirmedVisualAnchors,
   pdfChunkForPage,
   pdfChunkUrl,
+  PDF_CHUNK_BASE,
   pdfSourceForCourse,
   rememberCourse as persistCourse,
-} from '../navigator-core.mjs?v=mn-1';
-import { continuousCrops, blankSideBounds } from '../continuous-view.mjs';
-import { setupDivider } from '../site-ui.mjs?v=mn-1';
-import { createAiControls } from '../ai-preview.mjs?v=mn-1';
-import { attachQuestionActions } from '../question-actions.mjs?v=mn-1';
-import { setupStudySession } from '../study-session.mjs?v=mn-1';
-import { review9A, review9AAnswers } from '../review-set-9a.js';
-import * as pdfjsLib from '../pdfjs.min.js';
+} from './navigator-core.mjs';
+import { continuousCrops, blankSideBounds } from './continuous-view.mjs';
+import { setupDivider } from './site-ui.mjs';
+import { createAiControls } from './ai-preview.mjs';
+import { attachQuestionActions } from './question-actions.mjs';
+import { setupStudySession } from './study-session.mjs';
+import * as pdfjsLib from '../vendor/pdfjs/build/pdf.min.mjs';
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = './pdfjs-worker.min.js';
+pdfjsLib.GlobalWorkerOptions.workerSrc =
+  './vendor/pdfjs/build/pdf.worker.min.mjs';
 
 const aiControls = createAiControls();
 const params = new URLSearchParams(location.search);
@@ -87,7 +88,6 @@ const hosted =
   location.hostname.endsWith('.netlify.app');
 const pdfSource = pdfSourceForCourse(selectedCourse, hosted);
 const totalPages = pdfSource.totalPages;
-const cloudflarePdfBase = 'https://simon-math-book-pdf.pages.dev/pdf';
 const useCloudflarePdf = pdfSource.useChunks;
 const localPdfName = pdfSource.localPdf;
 const chunkForPage = (pageNumber) => {
@@ -97,7 +97,7 @@ const pdfHref = (pageNumber) => {
   if (!useCloudflarePdf)
     return `./${localPdfName}#page=${pageNumber}&zoom=page-width`;
   const chunk = chunkForPage(pageNumber);
-  return `${pdfChunkUrl(cloudflarePdfBase, selectedCourse, chunk.filename)}#page=${chunk.localPage}&zoom=page-width`;
+  return `${pdfChunkUrl(PDF_CHUNK_BASE, selectedCourse, chunk.filename)}#page=${chunk.localPage}&zoom=page-width`;
 };
 document.getElementById('questionPdfLink').href = pdfHref(requestedBookPage);
 document.getElementById('answerPdfLink').href = pdfHref(requestedAnswerPage);
@@ -147,11 +147,7 @@ const documentOptions = (url) => ({
 async function getPdfPage(pageNumber) {
   if (!useCloudflarePdf) return localPdf.getPage(pageNumber);
   const chunk = chunkForPage(pageNumber);
-  const sourceUrl = pdfChunkUrl(
-    cloudflarePdfBase,
-    selectedCourse,
-    chunk.filename,
-  );
+  const sourceUrl = pdfChunkUrl(PDF_CHUNK_BASE, selectedCourse, chunk.filename);
   if (!chunkDocuments.has(chunk.filename)) {
     const loadingTask = pdfjsLib.getDocument(
       documentOptions(sourceUrl),
@@ -178,10 +174,6 @@ const minZoom = 0.7;
 const maxZoom = 2.5;
 const zoomStep = 0.15;
 const pairedZoom = { book: 1, answer: 1 };
-const verified9A =
-  selectedCourse === 'hl' &&
-  /^Review Set 9A$/i.test(label) &&
-  requestedBookPage === 238;
 
 function showError(error) {
   const message =
@@ -437,13 +429,7 @@ async function findSection(
               : best,
           null,
         );
-      else
-        currentHeading =
-          (verified9A
-            ? startingHeadings.find((heading) =>
-                /^REVIEW SET 9A\b/i.test(heading.str),
-              )
-            : null) || startingHeadings[ordinal - 1];
+      else currentHeading = startingHeadings[ordinal - 1];
       if (!currentHeading) break;
     }
     const currentIndex = headings.findIndex(
@@ -1268,34 +1254,15 @@ async function renderCrop(crop, stack, cache, kind = 'problem') {
 
 async function startPairedView() {
   const bitmapCache = new Map();
-  let bookSection;
-  if (verified9A) {
-    // The next review heading on page 240 has unreadable OCR. Use the verified
-    // last-question boundary, while still displaying whole continuous pages.
-    const first = await analyzePage(238),
-      last = await analyzePage(240);
-    const heading = first.headings.find((heading) =>
-      /^REVIEW SET 9A\b/i.test(heading.str),
-    );
-    bookSection = await findSection(
-      'book',
-      238,
-      1,
-      heading?.top ?? (415 * first.height) / 1500,
-      null,
-      240,
-      (249 * last.height) / 1500,
-    );
-  } else
-    bookSection = await findSection(
-      'book',
-      panes.book.base,
-      bookOrdinal,
-      bookTopOverride,
-      null,
-      bookEndOverride,
-      bookEndTopOverride,
-    );
+  const bookSection = await findSection(
+    'book',
+    panes.book.base,
+    bookOrdinal,
+    bookTopOverride,
+    null,
+    bookEndOverride,
+    bookEndTopOverride,
+  );
   const answerSection =
     params.get('missingAnswer') === '1'
       ? null
@@ -1443,47 +1410,18 @@ async function startPairedView() {
     );
   }).observe(answerStack);
   let anchors = questionAnchors(bookSection);
-  if (!verified9A) {
-    try {
-      const visual = await visualQuestionAnchors(bookSection, bitmapCache);
-      const contiguous = (list) => {
-        let n = 1;
-        const numbers = new Set(list.map((anchor) => anchor.number));
-        while (numbers.has(n)) n++;
-        return n - 1;
-      };
-      if (contiguous(visual) > contiguous(anchors)) anchors = visual;
-    } catch {
-      /* Question metadata is optional; the continuous section remains usable. */
-    }
+  try {
+    const visual = await visualQuestionAnchors(bookSection, bitmapCache);
+    const contiguous = (list) => {
+      let n = 1;
+      const numbers = new Set(list.map((anchor) => anchor.number));
+      while (numbers.has(n)) n++;
+      return n - 1;
+    };
+    if (contiguous(visual) > contiguous(anchors)) anchors = visual;
+  } catch {
+    /* Question metadata is optional; the continuous section remains usable. */
   }
-  if (verified9A)
-    anchors = review9A.map(([page, top], index) => {
-      const unit = bookSection.units.find((unit) => unit.pageNumber === page);
-      const y = (top * unit.analysis.height) / 1500;
-      const number = unit.analysis.items
-        .filter(
-          (item) =>
-            item.str === String(index + 1) &&
-            Math.abs(
-              item.x -
-                expectedAnchorX(bookSection, unit, unit.top, unit.bottom),
-            ) < 70,
-        )
-        .sort((a, b) => Math.abs(a.top - y) - Math.abs(b.top - y))[0];
-      return {
-        number: index + 1,
-        unitOrder: unit.order,
-        pageNumber: page,
-        top: number?.top ?? y,
-        x:
-          number?.x ??
-          expectedAnchorX(bookSection, unit, unit.top, unit.bottom),
-        width: number?.width ?? 16,
-        height: number?.height ?? 18,
-        reliable: true,
-      };
-    });
   const jump = document.getElementById('questionJump');
   if (!anchors.length) jump.add(new Option('Entire section', 'section'));
   anchors.forEach((anchor) =>
@@ -1535,10 +1473,7 @@ async function startPairedView() {
           bookSection,
         )
       : 'Ask me to identify the question on the attached source pages.';
-    const text =
-      verified9A && anchor
-        ? review9A[anchor.number - 1][3]
-        : `PDF text is an unverified draft and may omit notation:\n${draft}`;
+    const text = `PDF text is an unverified draft and may omit notation:\n${draft}`;
     let imagePromise;
     const context = {
       number,

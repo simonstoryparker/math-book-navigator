@@ -31,7 +31,7 @@
       }
     </script>
     <link rel="stylesheet" href="site-ui.css?v=motion-4" />
-    <script type="module" src="home.mjs?v=mn-1"></script>
+    <script type="module" src="home.mjs?v=mn-2"></script>
   </head>
   <body class="home-page">
     <a class="skip-link" href="#exerciseList">Skip to exercises</a>
@@ -78,6 +78,37 @@
         </nav>
       </div>
       <section
+        id="courseSelection"
+        class="recent-sections course-selection"
+        aria-labelledby="courseSelectionTitle"
+      >
+        <h2 id="courseSelectionTitle">Choose your course</h2>
+        <div id="courseOptions">
+          <button
+            type="button"
+            class="recent-link"
+            data-course="sl"
+            aria-pressed="false"
+          >
+            <span class="recent-content">
+              <span class="recent-name">SL</span>
+              <small>Standard Level</small>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="recent-link"
+            data-course="hl"
+            aria-pressed="false"
+          >
+            <span class="recent-content">
+              <span class="recent-name">HL</span>
+              <small>Higher Level</small>
+            </span>
+          </button>
+        </div>
+      </section>
+      <section
         id="recentSections"
         class="recent-sections"
         aria-labelledby="recentTitle"
@@ -105,9 +136,7 @@
           </p>
         </section>
       </div>
-      <p id="catalogStatus" class="empty-state" role="status">
-        Choose SL or HL above to browse your book.
-      </p>
+      <p id="catalogStatus" class="empty-state" role="status" hidden></p>
       <noscript
         ><p>
           Enable JavaScript to browse exercises and view questions beside their

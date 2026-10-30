@@ -5,7 +5,7 @@ import {
   flip,
   shift,
 } from '@floating-ui/dom';
-import { anchorBox } from '../navigator-state.mjs';
+import { anchorBox } from './navigator-state.mjs';
 
 export function attachQuestionActions({
   anchors,
