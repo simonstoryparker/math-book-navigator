@@ -1,5 +1,6 @@
 import {
   sectionHeadings,
+  studyViewUrl,
   nextAnswerOverride,
   confirmedVisualAnchors,
   pdfChunkForPage,
@@ -109,11 +110,40 @@ if (params.get('missingAnswer') === '1') {
 }
 document.getElementById('title').textContent = label;
 document.title = `${label} | Simon Math Book`;
+
+async function setupExerciseNavigation() {
+  try {
+    const response = await fetch(`./${selectedCourse}-catalog.json`);
+    if (!response.ok) throw new Error('Exercise index unavailable');
+    const catalog = await response.json();
+    const exercises = catalog.chapters.flatMap((chapter) => chapter.items);
+    const index = exercises.findIndex(
+      (item) => item.label === label && item.questionPage === requestedBookPage,
+    );
+    if (index < 0) return;
+    for (const [id, offset] of [
+      ['previousExercise', -1],
+      ['nextExercise', 1],
+    ]) {
+      const button = document.getElementById(id);
+      const exercise = exercises[index + offset];
+      if (!exercise) continue;
+      button.disabled = false;
+      const description = `${offset < 0 ? 'Previous' : 'Next'} exercise: ${exercise.label}`;
+      button.title = description;
+      button.setAttribute('aria-label', description);
+      button.onclick = () => {
+        location.href = studyViewUrl(exercise, selectedCourse);
+      };
+    }
+  } catch {
+    /* Keep navigation unavailable if the exercise index cannot load. */
+  }
+}
+setupExerciseNavigation();
 document.getElementById(`${focus}Viewer`).classList.add('is-focus');
 if (pairedMode) {
   document.body.classList.add('paired');
-  document.querySelector('.title span').textContent =
-    'Drag the divider to resize the reading panes';
 }
 
 const panes = {
@@ -1533,8 +1563,6 @@ async function startPairedView() {
   document.addEventListener('ai-busy', (event) =>
     actions.setBusy(event.detail),
   );
-  document.getElementById('questionCount').textContent =
-    `${selectedCourse.toUpperCase()} · ${anchors.length ? `${anchors.length} questions` : 'Section view'}`;
   document.getElementById('fitQuestions').onclick = () => {
     setPairedZoom('book', 1);
     setPairedZoom('answer', 1);
@@ -1635,8 +1663,6 @@ async function start() {
       // Some scanned headings have no readable text. Keep the source
       // pages usable when automatic question pairing is unavailable.
       document.body.classList.remove('paired');
-      document.querySelector('.title span').textContent =
-        'Showing source pages because the section heading could not be read';
     }
   }
   const pageCount = Math.min(

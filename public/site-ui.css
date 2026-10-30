@@ -1086,7 +1086,6 @@ dialog.dialog-closing::backdrop {
 #currentQuestion {
   display: inline-flex;
   align-items: center;
-  min-width: 94px;
   font-size: 13px;
   font-weight: 600;
   color: var(--on-container);
@@ -1240,7 +1239,7 @@ html[data-keyboard] .question-hotspot:active {
   .toolbar {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
-    grid-template-areas: 'back appearance' 'title pdf';
+    grid-template-areas: 'back back' 'title appearance' 'pdf pdf';
     gap: 4px 12px;
     padding: 6px 16px;
   }
@@ -1566,7 +1565,7 @@ html[data-keyboard] .question-hotspot:active {
 /* Compact study tools share the selected Material palette. */
 body.paired .title {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   flex-wrap: wrap;
   gap: 2px 12px;
 }
@@ -1588,6 +1587,27 @@ body.paired .title span {
 }
 .view-tools {
   margin-left: auto;
+}
+.exercise-navigation {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.exercise-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.exercise-navigation .icon-button {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  padding: 8px;
+}
+.exercise-navigation button:disabled {
+  cursor: default;
+  opacity: 0.4;
 }
 #questionJump {
   min-width: 56px;
@@ -1880,6 +1900,7 @@ input[type='checkbox']:active {
   .palette-grid button:hover,
   .appearance-menu button:hover,
   .view-tools button:hover,
+  .exercise-navigation button:not(:disabled):hover,
   #aiToolbar button:hover,
   .ai-actions button:hover,
   .question-actions button:hover {
@@ -1887,6 +1908,7 @@ input[type='checkbox']:active {
   }
   #aiToolbar button:active,
   .view-tools button:active,
+  .exercise-navigation button:not(:disabled):active,
   .palette-grid button:active {
     border-radius: 12px;
   }

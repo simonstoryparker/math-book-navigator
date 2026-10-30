@@ -32,10 +32,59 @@
     <header class="toolbar">
       <a class="back" href="index.html">← Simon Math Book</a>
       <div class="title">
-        <h1 id="title">Questions and answers</h1>
-        <span id="questionCount"
-          >Read questions beside their printed answers</span
-        >
+        <div class="exercise-heading">
+          <h1 id="title">Questions and answers</h1>
+          <div
+            class="exercise-navigation"
+            role="group"
+            aria-label="Exercise navigation"
+          >
+            <button
+              class="icon-button"
+              id="previousExercise"
+              type="button"
+              aria-label="Previous exercise"
+              title="Previous exercise"
+              disabled
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="m15 6-6 6 6 6" />
+              </svg>
+            </button>
+            <button
+              class="icon-button"
+              id="nextExercise"
+              type="button"
+              aria-label="Next exercise"
+              title="Next exercise"
+              disabled
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="m9 6 6 6-6 6" />
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
       <nav class="pdf-links" aria-label="Open source PDF pages">
         <a class="pdf-link" id="questionPdfLink" target="_blank" rel="noopener"
