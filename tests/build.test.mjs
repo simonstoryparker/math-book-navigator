@@ -4,6 +4,7 @@ import { execFileSync } from 'node:child_process';
 import { lstat, readFile, readdir, readlink } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { resolve } from 'node:path';
+import { createHash } from 'node:crypto';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 
@@ -25,6 +26,15 @@ test('local and hosted builds contain complete browser assets', async () => {
       }
     }
     const study = await readFile(resolve(output, 'study.mjs'), 'utf8');
+    const version = createHash('sha256')
+      .update(study)
+      .digest('hex')
+      .slice(0, 12);
+    assert.ok(
+      (await readFile(resolve(output, 'split-view.html'), 'utf8')).includes(
+        `study.mjs?v=${version}`,
+      ),
+    );
     for (const match of study.matchAll(
       /(?:from|import)\s*["'](\.[^"']+)["']/g,
     )) {

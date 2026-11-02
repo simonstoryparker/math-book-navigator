@@ -1,5 +1,14 @@
 import { build } from 'esbuild';
-import { copyFile, cp, mkdir, rm, symlink } from 'node:fs/promises';
+import {
+  copyFile,
+  cp,
+  mkdir,
+  readFile,
+  rm,
+  symlink,
+  writeFile,
+} from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { resolve } from 'node:path';
 
@@ -46,6 +55,25 @@ await build({
     },
   ],
 });
+// Each deployed bundle gets a new URL when its contents change, so cached
+// readers cannot keep running old exercise mapping logic after a deployment.
+for (const [bundle, pages] of [
+  ['home.mjs', ['index.html', 'math_book_navigator.html']],
+  ['study.mjs', ['split-view.html']],
+]) {
+  const version = createHash('sha256')
+    .update(await readFile(resolve(output, bundle)))
+    .digest('hex')
+    .slice(0, 12);
+  for (const page of pages) {
+    const path = resolve(output, page);
+    const html = await readFile(path, 'utf8');
+    await writeFile(
+      path,
+      html.replace(`${bundle}?v=mn-2`, `${bundle}?v=${version}`),
+    );
+  }
+}
 if (local) {
   // Serve local books without copying hundreds of megabytes into each build.
   // Only the local build has symlinks; hosted builds contain no source PDFs.
