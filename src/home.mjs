@@ -217,7 +217,7 @@ async function selectCourse(next, { restore = true } = {}) {
     if (!catalogs.has(course))
       catalogs.set(
         course,
-        fetch(`./${course}-catalog.json`, { cache: 'force-cache' })
+        fetch(`./${course}-catalog.json`, { cache: 'no-cache' })
           .then((response) => {
             if (!response.ok) throw new Error('Index unavailable');
             return response.json();

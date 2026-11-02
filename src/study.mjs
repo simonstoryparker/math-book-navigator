@@ -1,6 +1,7 @@
 import {
   sectionHeadings,
   studyViewUrl,
+  currentStudyParams,
   nextAnswerOverride,
   confirmedVisualAnchors,
   pdfChunkForPage,
@@ -20,8 +21,17 @@ pdfjsLib.GlobalWorkerOptions.workerSrc =
   './vendor/pdfjs/build/pdf.worker.min.mjs';
 
 const aiControls = createAiControls();
-const params = new URLSearchParams(location.search);
+let params = new URLSearchParams(location.search);
 const selectedCourse = params.get('course') === 'sl' ? 'sl' : 'hl';
+const studyCatalog = await fetch(`./${selectedCourse}-catalog.json`, {
+  cache: 'no-cache',
+})
+  .then((response) => {
+    if (!response.ok) throw new Error('Exercise index unavailable');
+    return response.json();
+  })
+  .catch(() => null);
+params = currentStudyParams(params, studyCatalog, selectedCourse);
 let courseStorage = null;
 try {
   courseStorage = window.localStorage;
@@ -113,9 +123,8 @@ document.title = `${label} | Simon Math Book`;
 
 async function setupExerciseNavigation() {
   try {
-    const response = await fetch(`./${selectedCourse}-catalog.json`);
-    if (!response.ok) throw new Error('Exercise index unavailable');
-    const catalog = await response.json();
+    const catalog = studyCatalog;
+    if (!catalog) return;
     const exercises = catalog.chapters.flatMap((chapter) => chapter.items);
     const index = exercises.findIndex(
       (item) => item.label === label && item.questionPage === requestedBookPage,

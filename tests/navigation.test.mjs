@@ -6,8 +6,42 @@ import {
   pdfSourceForCourse,
   resolveCourse,
   studyViewUrl,
+  currentStudyParams,
 } from '../src/navigator-core.mjs';
 import { createCatalogSearch } from '../src/search.mjs';
+
+test('saved 11I links use current answer boundaries while keeping reading options', async () => {
+  const catalog = JSON.parse(
+    await readFile(new URL('../public/hl-catalog.json', import.meta.url)),
+  );
+  const old = new URLSearchParams({
+    course: 'hl',
+    book: '292',
+    answer: '896',
+    label: 'Exercise 11I',
+    answerOrdinal: '2',
+    mode: 'paired',
+    resume: '1',
+    question: '3',
+  });
+  const params = currentStudyParams(old, catalog, 'hl');
+  assert.equal(params.get('answerTop'), '329');
+  assert.equal(params.get('answerColumn'), '1');
+  assert.equal(params.get('answerEnd'), '896');
+  assert.equal(params.get('answerEndTop'), '1410.32');
+  assert.equal(params.get('answerEndColumn'), '1');
+  assert.equal(params.get('resume'), '1');
+  assert.equal(params.get('question'), '3');
+  assert.equal(params.get('mode'), 'paired');
+  assert.equal(old.has('answerTop'), false);
+  assert.equal(currentStudyParams(old, null, 'hl').toString(), old.toString());
+  const unknown = new URLSearchParams(old);
+  unknown.set('book', '293');
+  assert.equal(
+    currentStudyParams(unknown, catalog, 'hl').toString(),
+    unknown.toString(),
+  );
+});
 
 for (const course of ['sl', 'hl']) {
   const catalog = JSON.parse(

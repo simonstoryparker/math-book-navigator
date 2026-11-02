@@ -128,6 +128,40 @@ export function studyViewUrl(item, course, options = {}) {
   return `split-view.html?${params}`;
 }
 
+// Saved links can outlive corrections to the catalog's PDF boundaries.
+export function currentStudyParams(search, catalog, course) {
+  const params = new URLSearchParams(search);
+  const item = catalog?.chapters
+    ?.flatMap((chapter) => chapter.items)
+    .find(
+      (item) =>
+        item.label === params.get('label') &&
+        item.questionPage === Number(params.get('book')),
+    );
+  if (!item) return params;
+  const current = new URL(studyViewUrl(item, course), 'https://local.invalid/');
+  for (const key of [
+    'answer',
+    'bookOrdinal',
+    'answerOrdinal',
+    'bookTop',
+    'answerTop',
+    'answerColumn',
+    'bookEnd',
+    'bookEndTop',
+    'answerEnd',
+    'answerEndTop',
+    'answerEndColumn',
+    'answerNumberOverrides',
+    'missingAnswer',
+  ]) {
+    params.delete(key);
+    if (current.searchParams.has(key))
+      params.set(key, current.searchParams.get(key));
+  }
+  return params;
+}
+
 export function normalizeAnchorSequence(anchors) {
   const ordered = [...anchors].sort(
     (a, b) => a.unitOrder - b.unitOrder || a.top - b.top,
