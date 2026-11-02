@@ -760,7 +760,12 @@
           "questionPage": 292,
           "answerPage": 896,
           "questionOrdinal": 1,
-          "answerOrdinal": 2
+          "answerOrdinal": 2,
+          "answerTop": 329,
+          "answerColumn": 1,
+          "answerEndPage": 896,
+          "answerEndTop": 1410.32,
+          "answerEndColumn": 1
         },
         {
           "label": "Exercise 11J",
